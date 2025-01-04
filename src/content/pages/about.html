@@ -4,7 +4,7 @@ description: "Meta description for the page"
 preloadImg: "/assets/images/cabinets2.jpg"
 permalink: "about/"
 eleventyNavigation:
-    key: About Us
+    key: About
     order: 200
 ---
 
@@ -15,120 +15,218 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
+
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/cabinets2.jpg"
-                alt="kitchen cabinets"
-                loading="eager"
-                width="2500"
-                height="1667"
-            />
+    <section id="hero-1856">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Best Gym Of The City For Fitness</span>
+                <h1 class="cs-title">You Can Boost Your Strength</h1>
+                <p class="cs-text">
+                    Develop confidence, composure under pressure and the discipline needed to be a champ. This is the club you’ve been looking for.
+                </p>
+                <a href="" class="cs-button-solid">Read More</a>
+                <img class="cs-content-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-graphic.svg" alt="graphic" height="1075" width="1135" loading="lazy" decoding="async">
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png" alt="field" width="1920" height="1200" aria-hidden="true">
         </picture>
+
+        <img class="cs-graphic cs-graphic-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-splatter.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+        <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+        <img class="cs-graphic cs-graphic-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
     </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                 Why Choose Us                -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="why-choose-1821">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/cabinets2.jpg"
-                        alt="cabinets"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/construction.jpg"
-                        alt="house"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
+            <div class="cs-content">
+                <span class="cs-topper">Why Choose Us</span>
+                <h2 class="cs-title">Why Choose Stitch Gym</h2>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym3.png">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym3.png">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym3.png" alt="body builder" width="562" height="568">
                 </picture>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet.
-                        Praesent Classei consequat tincidunt turpis sit amet
-                        imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img
-                        class="cs-quote-icon"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                        alt="gavel"
-                        width="136"
-                        height="77"
-                    />
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-house.svg" alt="icon" width="32" height="32">
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            22,000 Square Feet Modern Gym
+                        </h3>
+                        <p class="cs-item-text">
+                            Take advantage of our spacious gym equipped with a wide range of gym fitness machines so you can achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-layer.svg" alt="icon" width="32" height="32">
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            State of The Art Equipment
+                        </h3>
+                        <p class="cs-item-text">
+                            Take advantage of our spacious gym equipped with a wide range of gym fitness machines so you can achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-hourglass.svg" alt="icon" width="32" height="32">
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Programs for Proper Weight Loss
+                        </h3>
+                        <p class="cs-item-text">
+                            Take advantage of our spacious gym equipped with a wide range of gym fitness machines so you can achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-flower.svg" alt="icon" width="32" height="32">
+                    <div class="cs-item-wrapper">
+                        <h3 class="cs-h3">
+                            Free Fitness Training for New
+                        </h3>
+                        <p class="cs-item-text">
+                            Take advantage of our spacious gym equipped with a wide range of gym fitness machines so you can achieve.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+           
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse             -->
+    <!-- ============================================ -->
+
+    <section id="sbsr-956">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <!--Left Image-->
+                <picture class="cs-picture cs-picture1">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg" alt="hair salon" width="349" height="590">
+                </picture>
+                <div class="cs-flex">
+                    <!--right image-->
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg" alt="hair salon" width="281" height="387">
+                    </picture>
+                    <div class="cs-contact-group">
+                        <a class="cs-link" href="mailto:Info@health&wellness.com">
+                            <picture class="cs-wrapper">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-hair.svg" alt="icon" width="24" height="24">
+                            </picture>
+                            <div class="cs-info">
+                                <span class="cs-header">Send A Message</span>
+                                <span class="cs-link-content">Info@hairstyle.com</span>
+                            </div>
+                        </a>
+                        <a class="cs-link" href="">
+                            <picture class="cs-wrapper">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-hair.svg" alt="icon" width="24" height="24">
+                            </picture>
+                            <div class="cs-info">
+                                <span class="cs-header">Visit Us At</span>
+                                <span class="cs-link-content">123 Fake St, Highland, IN</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Hair Salon Services</span>
+                <h2 class="cs-title">Life Is More Beautiful When You Meet The Right Hairdresser</h2>
+                <p class="cs-text">
+                    The Hair salon Stitch pack is designed specifically for a hairdressers, salons, and beauty centers, with a modern high end feel to match the expectations for design in this industry. These Stitches are great for anything and everything hair and beauty but can also be repurposed for anything high end or luxury.
+                </p>
+                <a href="" class="cs-button-solid" aria-label="learn more about us">Learn More</a>
+            </div>
+        </div>
+        <!--Zen Leaf Group-->
+        <img class="cs-floater" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair-tools.png" alt="hair tools" width="445" height="310">
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Gallery                     -->
+    <!-- ============================================ -->
+
+    <section id="gallery-42">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Our Portfolio</span>
+                    <h2 class="cs-title">View Our Gallery</h2>
+                </div>
+                <div class="cs-flex">
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue.
+                    </p>
+                    <a aria-label="view more pictures" href="" class="cs-link">
+                        View More
+                        <!-- SVG Arrow -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.84999C16.55 8.52999 16.01 8.75999 16.01 9.19999V11Z" fill="#14142B"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture-1">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg" alt="formerly dress you people outside" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-2">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg" alt="formal dinner" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-3">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3.jpg" alt="formerly dress you people outside" width="780" height="582">
+                </picture>
+                <picture class="cs-picture cs-picture-4">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4.jpg" alt="recital" width="780" height="582">
+                </picture>
+                <picture class="cs-picture cs-picture-5">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg" alt="formal evening" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-6">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg" alt="formal dinner" width="380" height="271">
+                </picture>
             </div>
         </div>
     </section>
-
-    {% include 'components/testimonials.html' %}
+                                
 {% endblock %}
