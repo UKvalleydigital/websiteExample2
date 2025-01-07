@@ -653,10 +653,6 @@
             height: calc(348 / 16 * 1rem);
         }
 
-        .cs-floater {
-            display: none;
-        }
-
         .cs-flex {
             width: 100%;
             /* breaks up the container so the browser treats its children as if they are not inside this container. They are considered children of the .cs-image-group and makes it easier to space everything this way on mobile */
@@ -827,21 +823,6 @@
             flex: none;
             /* sends it to the right in the 2nd position */
             order: 2;
-        }
-    }
-}
-
-/* Large Desktop - 1800px */
-@media only screen and (min-width: 112.5rem) {
-    #sbsr-956 {
-        .cs-floater {
-            width: calc(445 / 16 * 1rem);
-            height: auto;
-            display: block;
-            position: absolute;
-            left: calc(445 / 16 * 1rem);
-            top: calc(20 / 16 * 1rem);
-            transform: scaleX(-1);
         }
     }
 }

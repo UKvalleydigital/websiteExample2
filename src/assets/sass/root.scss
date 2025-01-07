@@ -639,7 +639,7 @@
             width: 100%;
             height: auto;
             padding-bottom: calc(48 / 20 * 1em);
-            background-color: #fff;
+            background-color: #1a1a1a;
             border-radius: 0 0 calc(24 / 16 * 1rem) calc(24 / 16 * 1rem);
             position: absolute;
             top: 85%;
@@ -722,7 +722,7 @@
             line-height: 1.2em;
             text-decoration: none;
             margin: 0;
-            color: var(--headerColor);
+            color: white;
             display: inline-block;
             position: relative;
 
