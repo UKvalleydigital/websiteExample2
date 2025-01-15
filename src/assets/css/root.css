@@ -1569,10 +1569,6 @@
   body.dark-mode #cs-footer-1761 .cs-link:hover {
     color: var(--primary);
   }
-  body.dark-mode #cs-footer-1761 .cs-logo {
-    /* makes the logo white on dark mode */
-    filter: grayscale(1) brightness(1000%);
-  }
   body.dark-mode #cs-footer-1761 .cs-logomark {
     opacity: 0.4;
   }
