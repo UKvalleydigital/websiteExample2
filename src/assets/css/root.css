@@ -626,12 +626,11 @@
 }
 /* Dark Mode */
 @media only screen and (max-width: 63.9375rem) {
+  body.dark-mode #cs-navigation {
+    border: 2px solid white;
+  }
   body.dark-mode #cs-navigation:before {
     background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #cs-navigation .cs-toggle {
     background-color: var(--secondary);
@@ -717,7 +716,7 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #cs-navigation {
-    background-color: #030000;
+    background-color: #000000;
   }
   #cs-navigation .cs-dropdown {
     position: relative;
@@ -821,7 +820,7 @@
 /* Dark Mode - Desktop */
 @media only screen and (min-width: 64rem) {
   body.dark-mode #cs-navigation .cs-drop-ul {
-    background-color: var(--dark);
+    background-color: var(--medium);
   }
   body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
     color: var(--bodyTextColorWhite);
@@ -839,7 +838,7 @@
     top: 0;
   }
   #cs-navigation {
-    background-color: #030000;
+    background-color: #000000;
     border: 2px solid white;
     width: 94%;
     max-width: 90rem;
@@ -1041,10 +1040,7 @@
 @media only screen and (min-width: 64rem) {
   body.dark-mode #cs-navigation {
     background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
+    border: 2px solid white;
   }
   body.dark-mode #cs-navigation .cs-li-link,
   body.dark-mode #cs-navigation .cs-phone {

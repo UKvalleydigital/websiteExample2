@@ -754,13 +754,10 @@
 @media only screen and (max-width: 63.9375rem) {
     body.dark-mode {
         #cs-navigation {
+            border: 2px solid white;
+
             &:before {
                 background-color: var(--dark);
-            }
-
-            .cs-logo {
-                /* makes it white */
-                filter: grayscale(1) brightness(1000%);
             }
 
             .cs-toggle {
@@ -871,7 +868,7 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #cs-navigation {
-        background-color: #030000;
+        background-color: #000000;
         .cs-dropdown {
             position: relative;
             &:hover {
@@ -989,7 +986,7 @@
     body.dark-mode {
         #cs-navigation {
             .cs-drop-ul {
-                background-color: var(--dark);
+                background-color: var(--medium);
             }
 
             .cs-li-link.cs-drop-link {
@@ -1017,7 +1014,7 @@
     }
 
     #cs-navigation {
-        background-color: #030000;
+        background-color: #000000;
         border: 2px solid white;
         width: 94%;
         max-width: calc(1440 / 16 * 1rem);
@@ -1248,11 +1245,7 @@
     body.dark-mode {
         #cs-navigation {
             background-color: var(--dark);
-
-            .cs-logo {
-                /* turns it white */
-                filter: grayscale(1) brightness(1000%);
-            }
+            border: 2px solid white;
 
             .cs-li-link,
             .cs-phone {
